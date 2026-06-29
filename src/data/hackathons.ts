@@ -1,4 +1,4 @@
-import { Hackathon } from "@/types";
+import type { Hackathon, HackathonTheme, IndianState } from "@/types";
 
 export const hackathons: Hackathon[] = [
   // ===================== HACKATHONS =====================
@@ -15,11 +15,11 @@ export const hackathons: Hackathon[] = [
     themes: ["AI/ML", "Design"],
     organizer: "CodeStorm Inc.",
     registrationLink: "https://devfolio.co/hackathons",
-    registrationDeadline: "2026-06-30",
+    registrationDeadline: "2026-07-02",
     prizePool: "₹50,000",
     teamSize: "2-4 members",
     isFeatured: true,
-    status: "live",
+    status: "upcoming",
     category: "hackathon",
   },
   {
@@ -28,18 +28,38 @@ export const hackathons: Hackathon[] = [
     tagline: "Empowering women in tech through innovation",
     description:
       "India's largest women-in-tech hackathon returns for its 4th edition! Girlathon aims to empower female developers and engineers to build solutions in AI/ML, IoT, and future mobility. Open exclusively to women and non-binary students. Mentorship sessions and workshops included.",
-    startDate: "2026-06-28",
-    endDate: "2026-07-10",
+    startDate: "2026-07-05",
+    endDate: "2026-07-15",
     mode: "online",
     state: "National",
     themes: ["AI/ML", "IoT", "GreenTech"],
     organizer: "Girlathon Foundation",
     registrationLink: "https://devfolio.co/hackathons",
-    registrationDeadline: "2026-06-27",
+    registrationDeadline: "2026-07-03",
     prizePool: "₹1,00,000",
     teamSize: "2-3 members",
     isFeatured: true,
-    status: "live",
+    status: "upcoming",
+    category: "hackathon",
+  },
+  {
+    id: "the-talent-hack",
+    name: "The Talent Hack 2026",
+    tagline: "Showcase your skills, land your dream internship",
+    description:
+      "A hiring-focused hackathon on HackerEarth where top performers get direct internship and job opportunities from partner companies. Solve real-world challenges across multiple domains and get noticed by leading tech recruiters across India.",
+    startDate: "2026-07-10",
+    endDate: "2026-07-20",
+    mode: "online",
+    state: "National",
+    themes: ["Open Innovation", "AI/ML", "Cloud"],
+    organizer: "HackerEarth",
+    registrationLink: "https://hackerearth.com/challenges/hackathon/the-talent-hack-2026",
+    registrationDeadline: "2026-07-08",
+    prizePool: "₹3,00,000 + Internships",
+    teamSize: "1-3 members",
+    isFeatured: true,
+    status: "upcoming",
     category: "hackathon",
   },
   {
@@ -81,7 +101,7 @@ export const hackathons: Hackathon[] = [
     prizePool: "₹30,000",
     teamSize: "1-3 members",
     isFeatured: false,
-    status: "live",
+    status: "upcoming",
     category: "hackathon",
   },
   {
@@ -168,6 +188,28 @@ export const hackathons: Hackathon[] = [
     registrationDeadline: "2026-07-15",
     prizePool: "₹1,20,000",
     teamSize: "3-4 members",
+    isFeatured: true,
+    status: "upcoming",
+    category: "hackathon",
+  },
+  {
+    id: "hexafalls-2",
+    name: "HexaFalls 2",
+    tagline: "Six challenges, one champion — HexaFalls returns!",
+    description:
+      "HexaFalls is back with its second edition! A multi-track offline hackathon with six distinct challenge tracks spanning AI/ML, Web3, IoT, Design, FinTech, and Open Innovation. 36 hours of intense coding, mentorship, and networking.",
+    startDate: "2026-07-25",
+    endDate: "2026-07-26",
+    mode: "offline",
+    city: "Bangalore",
+    state: "Karnataka",
+    venue: "Christ University, Bangalore",
+    themes: ["AI/ML", "Web3", "IoT", "Design", "FinTech", "Open Innovation"],
+    organizer: "HexaFalls Tech Collective",
+    registrationLink: "https://devfolio.co/hackathons",
+    registrationDeadline: "2026-07-20",
+    prizePool: "₹2,00,000",
+    teamSize: "2-4 members",
     isFeatured: true,
     status: "upcoming",
     category: "hackathon",
@@ -417,7 +459,7 @@ export const hackathons: Hackathon[] = [
     themes: ["Open Innovation", "FinTech", "EdTech", "HealthTech"],
     organizer: "Startup India & DPIIT",
     registrationLink: "https://unstop.com/hackathons",
-    registrationDeadline: "2026-07-04",
+    registrationDeadline: "2026-07-06",
     prizePool: "₹10,00,000 + Incubation",
     teamSize: "2-5 members",
     isFeatured: true,
@@ -581,6 +623,28 @@ export const hackathons: Hackathon[] = [
 
   // ===================== TECH EVENTS =====================
   {
+    id: "datahack-summit-2026",
+    name: "DataHack Summit 2026",
+    tagline: "Human x AI: The Rise of the Agentic Operating Layer",
+    description:
+      "India's premier AI conference covering generative AI, agentic AI, and responsible AI. Featuring keynotes from global AI leaders, hands-on workshops on LLMs and AI agents, and networking with the AI community.",
+    startDate: "2026-08-05",
+    endDate: "2026-08-08",
+    mode: "offline",
+    city: "Bangalore",
+    state: "Karnataka",
+    venue: "The Leela Bhartiya City, Bangalore",
+    themes: ["AI/ML", "Cloud", "Design"],
+    organizer: "Analytics Vidhya",
+    registrationLink: "https://datahacksummit.com",
+    registrationDeadline: "2026-08-01",
+    prizePool: "Paid Event",
+    teamSize: "Individual",
+    isFeatured: true,
+    status: "upcoming",
+    category: "tech-event",
+  },
+  {
     id: "google-io-connect-2026",
     name: "Google I/O Connect Bangalore",
     tagline: "Connect with Google's latest developer innovations",
@@ -669,6 +733,28 @@ export const hackathons: Hackathon[] = [
     category: "tech-event",
   },
   {
+    id: "cypher-2026",
+    name: "Cypher 2026",
+    tagline: "India's flagship AI conference",
+    description:
+      "India's flagship AI conference hosted by Analytics India Magazine. Bringing together AI founders, leaders, and practitioners to discuss industry trends, production-grade AI applications, and the future of artificial intelligence.",
+    startDate: "2026-10-07",
+    endDate: "2026-10-09",
+    mode: "offline",
+    city: "Bangalore",
+    state: "Karnataka",
+    venue: "KTPO, Whitefield, Bangalore",
+    themes: ["AI/ML", "Cloud"],
+    organizer: "Analytics India Magazine",
+    registrationLink: "https://cypher.analyticsindiamag.com",
+    registrationDeadline: "2026-09-25",
+    prizePool: "Paid Event",
+    teamSize: "Individual",
+    isFeatured: true,
+    status: "upcoming",
+    category: "tech-event",
+  },
+  {
     id: "devfest-delhi-2026",
     name: "DevFest Delhi 2026",
     tagline: "Google's largest developer festival in North India",
@@ -715,7 +801,7 @@ export const hackathons: Hackathon[] = [
   {
     id: "js-conf-india-2026",
     name: "JS Conf India 2026",
-    tagline: "JavaScript everywher",
+    tagline: "JavaScript everywhere",
     description:
       "JS Conf India brings together JavaScript developers from across the country. Two days of talks on frontend, backend, tooling, and the JavaScript ecosystem. Featuring international and national speakers.",
     startDate: "2026-12-04",
@@ -911,6 +997,28 @@ export const hackathons: Hackathon[] = [
     category: "tech-event",
   },
   {
+    id: "bengaluru-tech-summit-2026",
+    name: "Bengaluru Tech Summit 2026",
+    tagline: "AI & Beyond — India's largest innovation summit",
+    description:
+      "The 29th edition of Bengaluru Tech Summit focusing on IT, Deeptech, Biotechnology, and emerging innovations. Features exhibitions, B2B/B2G networking, international innovation alliances, and startup showcases.",
+    startDate: "2026-11-17",
+    endDate: "2026-11-19",
+    mode: "offline",
+    city: "Bangalore",
+    state: "Karnataka",
+    venue: "Bangalore International Exhibition Centre (BIEC), Bangalore",
+    themes: ["AI/ML", "IoT", "Cloud", "Open Innovation"],
+    organizer: "Karnataka Government & STPI",
+    registrationLink: "https://bengalurutechsummit.com",
+    registrationDeadline: "2026-11-10",
+    prizePool: "Paid Event",
+    teamSize: "Individual",
+    isFeatured: true,
+    status: "upcoming",
+    category: "tech-event",
+  },
+  {
     id: "ai-summit-bangalore-2026",
     name: "AI Summit Bangalore",
     tagline: "Where AI meets enterprise",
@@ -936,11 +1044,11 @@ export const hackathons: Hackathon[] = [
 
 export const allThemes = [
   ...new Set(hackathons.flatMap((h) => h.themes)),
-].sort() as Hackathon["themes"];
+].sort() as HackathonTheme[];
 
 export const allStates = [
   ...new Set(hackathons.map((h) => h.state)),
-].sort() as Hackathon["state"][];
+].sort() as IndianState[];
 
 export const getHackathonById = (id: string): Hackathon | undefined => {
   return hackathons.find((h) => h.id === id);
